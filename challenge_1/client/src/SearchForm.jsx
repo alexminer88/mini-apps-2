@@ -11,11 +11,10 @@ class SearchForm extends React.Component {
   }
 
   handleInputChange(event) {
-    console.log(event.target);
     this.setState({
-      // query: this.event.value
       [event.target.id]: event.target.value,
     });
+
   }
 
   render() {
@@ -23,7 +22,7 @@ class SearchForm extends React.Component {
       <div className="search-bar">
         <label htmlFor="query"></label>
         <input type="text" id="query" onChange={this.handleInputChange}/>
-        <button onClick={()=>{}}>Search!</button>
+        <button onClick={()=>{this.props.getHistoricData(this.state.query)}}>Search!</button>
       </div>
     )
   }
