@@ -1,5 +1,5 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
-const App = require('./app.jsx');
+import App from './App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('Reviews'));
+ReactDOM.render(<App />, document.getElementById('HistoricData'));
