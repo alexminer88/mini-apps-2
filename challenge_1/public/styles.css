@@ -1,0 +1,23 @@
+body {
+  font-family: Arial;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  border: 1px rgb(150, 150, 150) solid;
+  /* margin: 10px 10px; */
+  padding: 5px 5px;
+}
+
+li:not(:first-child) {
+  border-left: none; 
+}
+
+td {
+  padding: 5px 10px;
+}
