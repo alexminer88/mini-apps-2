@@ -22,7 +22,7 @@ class SearchForm extends React.Component {
       <div className="search-bar">
         <label htmlFor="query"></label>
         <input type="text" id="query" onChange={this.handleInputChange}/>
-        <button onClick={()=>{this.props.getHistoricData(this.state.query)}}>Search!</button>
+        <button onClick={()=>{this.props.getHistoricData(this.state.query, 1)}}>Search!</button>
       </div>
     )
   }
